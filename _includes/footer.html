@@ -5,6 +5,8 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         {{ site.title }}
+        <br>
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> <span class="username">subscribe</span></a>
       </div>
 
       <div class="footer-col footer-col-2">
@@ -21,6 +23,7 @@
           </li>
           {% endif %}
           <li><a href="http://stackoverflow.com/users/42344/jonathan-cone"><i class="fa fa-stack-overflow"></i> <span class="username">jonathan.cone</span></a></li>
+
         </ul>
       </div>
 
