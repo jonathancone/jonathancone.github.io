@@ -1,0 +1,17 @@
+---
+layout: post
+title: Eclipse Juno, Maven, M2E and EGit Compatibility Problem and Solution
+date: '2012-08-18T14:10:00.000-05:00'
+author: Jonathan Cone
+tags:
+- m2eclipse
+- Git
+- Maven
+- Eclipse
+modified_time: '2012-08-18T18:41:13.688-05:00'
+thumbnail: http://4.bp.blogspot.com/-JI57M1TZ8Ec/UC_p5Ag6I2I/AAAAAAAAAII/Rcm870bXTmc/s72-c/Screenshot+from+2012-08-19+13:39:12.png
+blogger_id: tag:blogger.com,1999:blog-850212609563989685.post-6417952837343338340
+blogger_orig_url: http://www.machineversus.me/2012/08/if-youve-upgraded-to-eclipse-juno.html
+---
+
+If you've upgraded to <b>Eclipse Juno</b> recently, you're likely having trouble using the following plugins in harmony with each other:<br /><ul><li>&nbsp;&nbsp;&nbsp; EGit</li><li>&nbsp;&nbsp;&nbsp; m2e</li><li>&nbsp;&nbsp;&nbsp; m2eclipse-egit connector </li></ul>If you try to install the <b>m2eclipse-egit</b> connector, you'll get an error message similar to the following:<br /><br /><blockquote class="tr_bq"><a href="http://4.bp.blogspot.com/-JI57M1TZ8Ec/UC_p5Ag6I2I/AAAAAAAAAII/Rcm870bXTmc/s1600/Screenshot+from+2012-08-19+13:39:12.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="245" src="http://4.bp.blogspot.com/-JI57M1TZ8Ec/UC_p5Ag6I2I/AAAAAAAAAII/Rcm870bXTmc/s320/Screenshot+from+2012-08-19+13:39:12.png" width="320" /></a><b>Operation details</b><br /><b>&nbsp; Cannot complete the install because of a conflicting dependency.</b><br /><b>&nbsp; Software being installed: Maven SCM Handler for EGit 0.14.0.201110251725</b></blockquote><br /><br /><br />The problem is that the m2e connector available on the update site through the marketplace is not compatible with the latest version of EGit that ships with Eclipse Juno.&nbsp; To get around this problem, you'll need to install the most up to date m2e-egit connector version manually.&nbsp; To do this, perform the following steps:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-86R8ex43448/UC_p8DYk4RI/AAAAAAAAAIQ/vet6TvIOxkI/s1600/Screenshot+from+2012-08-19+13:52:04.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="292" src="http://3.bp.blogspot.com/-86R8ex43448/UC_p8DYk4RI/AAAAAAAAAIQ/vet6TvIOxkI/s320/Screenshot+from+2012-08-19+13:52:04.png" width="320" /></a></div><br /><ol><li>Click Help</li><li><b>Install New Software</b></li><li>Uncheck the box labeled <b>Group items by category</b> (this step is important or you won't see the connector in the table)</li><li>Paste in this URL <a href="http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-egit/0.14.0/N/0.14.0.20120701011/"><b>http://repository.tesla.io:8081/nexus/content/sites/m2e.extras/m2eclipse-egit/0.14.0/N/0.14.0.20120701011/</b></a></li><li>Finish the plugin install wizard and restart the workspace</li></ol><br /><br />Its worth noting that this problem exists for the other connectors as well, i.e.the subversion connector. If you're still having trouble, the following thread may help:<br /><br /><br /><a href="http://dev.eclipse.org/mhonarc/lists/m2e-users/msg02748.html">http://dev.eclipse.org/mhonarc/lists/m2e-users/msg02748.html</a>

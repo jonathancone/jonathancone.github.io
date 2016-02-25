@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+### __Jonathan Cone__
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm a full-stack software developer interested in all things Java, Linux, SQL, HTML 5, JavaScript and CSS.  I think everyone should use great tools like git, Jenkins and Sublime Text.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+I've enjoyed working for companies with 2 employees all the way up to 120,000.  I've been forturnate to have people that use software I've written on every continent but Antarctica (still working on that one). 
+
+When I'm not coding you might find me tickling my kids, playing softball or basketball or tinkering in my workshop.
