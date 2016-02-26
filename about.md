@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About Me
+title: About Jonathan Cone
 permalink: /about/
 ---
-
-### __Jonathan Cone__
 
 I'm a full-stack software developer interested in all things Java, Linux, SQL, HTML 5, JavaScript and CSS.  I think everyone should use great tools like git, Jenkins and Sublime Text.
 
