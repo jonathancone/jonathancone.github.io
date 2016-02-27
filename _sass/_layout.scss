@@ -124,6 +124,12 @@
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     font-family: monospace;
+    opacity: .7;
+
+    &:hover {
+        opacity: 1;
+    };
+
 }
 
 .footer-heading {
@@ -186,7 +192,18 @@
     }
 }
 
-
+.selfie {
+    background-size: 50px; 
+    background-image: url("../images/jonathancone.png");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+}
 
 /**
  * Page content
