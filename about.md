@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Jonathan Cone
+title: About
 permalink: /about/
 ---
 
